@@ -1,0 +1,98 @@
+/* Estilo para o tabuleiro do jogo */
+
+body {
+  background-image: url("../public/tic-tac-toe-bg.jpg");
+  backdrop-filter: blur(8px);
+}
+
+.game {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.game-board {
+  background: #333;
+  border: 2px solid #fff;
+  border-radius: 5px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Estilo para o status do jogo */
+.status {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  font-size: 24px;
+  color: #fff;
+  margin-bottom: 20px;
+}
+
+.next-player {
+  background-color: #eece2d;
+  color: #000;
+  width: 32px;
+  height: 32px;
+  text-align: center;
+}
+
+/* Estilo para as linhas do tabuleiro */
+.board-row {
+  display: flex;
+}
+
+/* Estilo para as células do tabuleiro */
+.square {
+  width: 100px;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 36px;
+  font-weight: bold;
+  background: #fff;
+  border: 1px solid #ccc;
+  cursor: pointer;
+}
+
+.square:hover {
+  transform: scale(1.01);
+  background-color: #fffffc;
+  border: 2px solid #eece2d;
+}
+
+/* Estilo para os botões de navegação */
+.game-info {
+  margin: 0 2.5rem;
+  text-align: center;
+}
+
+ol {
+  list-style-type: none;
+  padding: 0;
+}
+
+li {
+  margin-bottom: 10px;
+}
+
+/* Estilo para o botão de navegação */
+.restart-game-button {
+  background: #eece2d;
+  color: #fff;
+  padding: 5px 10px;
+  border: none;
+  cursor: pointer;
+  color: #333;
+  font-weight: 700;
+}
+
+.restart-game-button:hover {
+  background: #bea424;
+}
